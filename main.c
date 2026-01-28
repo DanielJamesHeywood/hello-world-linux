@@ -1,6 +1,7 @@
-#include <stdio.h>
+#include "standardLibrary/system/ArgumentCount.h"
+#include "standardLibrary/system/ExitStatus.h"
+#include "standardLibrary/inputOutput.h"
 
-int main(void) {
-    printf("Hello, World!\n");
-    return 0;
+ExitStatus main(ArgumentCount argumentCount, String argumentVector[]) {
+    return print("Hello, World!\n") ? success : failure;
 }
