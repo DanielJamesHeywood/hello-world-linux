@@ -6,7 +6,7 @@ add_executable(
     standardLibrary/system/systemCalls.s
     standardLibrary/inputOutput.c
     standardLibrary/String.c
-    main.c
+    start.c
 )
 target_compile_options(hello_world PRIVATE -fno-builtin)
-target_link_options(hello_world PRIVATE -nostdlib -static)
+target_link_options(hello_world PRIVATE -e start -nostdlib -static)
