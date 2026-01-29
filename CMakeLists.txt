@@ -9,4 +9,4 @@ add_executable(
     main.c
 )
 target_compile_options(hello_world PRIVATE -fno-builtin)
-target_link_options(hello_world PRIVATE -static -nostdlib)
+target_link_options(hello_world PRIVATE -nostdlib -static)
