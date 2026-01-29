@@ -7,3 +7,4 @@ add_executable(
     standardLibrary/inputOutput.c
     standardLibrary/String.c
 )
+target_link_options(hello_world PRIVATE -static -nostdlib)
